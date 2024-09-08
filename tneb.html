@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> TNEB Bill Calculator</title>
+        <link  rel="stylesheet"  href="n.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>TNEB Bill Calculator By Bharath</h1>
+            
+            <input type="display" id="screen">
+            <table class="tb">
+                <tr>
+                    <td><button onclick="my('1')" class="no">1</button></td>
+                    <td><button onclick="my('2')" class="no">2</button></td>
+                    <td><button onclick="my('3')"class="no">3</button></td>
+                    <td><button onclick="my('4')"class="no">4</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="my('5')"class="no">5</button></td>
+                    <td><button onclick="my('6')"class="no">6</button></td>
+                    <td><button onclick="my('7')"class="no">7</button></td>
+                    <td><button onclick="my('8')"class="no">8</button></td>
+                </tr>
+                <tr>
+                    <td><button  onclick="my('9')"class="no">9</button></td>
+                    <td><button  onclick="my('0')"class="no">0</button></td>
+                    <td><button onclick="my('00')" class="no">00</button></td>
+                    <td><button onclick="display.value=display.value.toString().slice(0,-1)" class="no">Del</button></td>
+                </tr>
+                </table>
+            <table class="rb">
+                
+            <tr>
+                <td><button onclick ="tneb()" id=' tneb'class="final">Calculate</button></td>
+            </tr>
+            </table>
+            <table class="fb">
+           <tr> <h2 id="result" class="tab"></h2>
+            <h id="noone"></h>
+            <h id="n"></h>
+            </tr>
+           </table>
+        </div>
+    </body>
+    <script src="no.js"></script>
+</html>
